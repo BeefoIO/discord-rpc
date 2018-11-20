@@ -1,0 +1,61 @@
+{
+  "name": "discord-presence",
+  "version": "1.0.0",
+  "description": "Discord Rich Presence in JS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build && build -w portable",
+    "portable": "build -w portable",
+    "appx": "build -w appx",
+    "test": "standard --fix",
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "build": {
+    "appId": "beefo.io",
+    "productName": "Discord_Rich_Presence",
+    "copyright": "Copyright ©2018 BeefoIO",
+    "win": {
+      "target": "squirrel"
+    },
+    "squirrelWindows": {
+      "iconUrl": "https://static.realliferpg.de/img/launcher/icon.ico"
+    },
+    "portable": {
+      "requestExecutionLevel": "user"
+    },
+    "extraFiles": "config.json"
+  },
+  "contributors": [
+    {
+      "name": "Beefo",
+      "email": "gerbeefo@gmail.com",
+      "url": "https://github.com/GERBeefo"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeefoIO/discord-rpc.git"
+  },
+  "author": "BeefoIO",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/BeefoIO/discord-rpc/issues"
+  },
+  "homepage": "https://github.com/BeefoIO/discord-rpc#readme",
+  "devDependencies": {
+    "devtron": "1.4.0",
+    "electron": "3.0.6",
+    "electron-builder": "^20.33.2",
+    "electron-builder-squirrel-windows": "^20.33.2",
+    "electron-packager": "^8.7.0",
+    "electron-winstaller": "^2.7.0",
+    "standard": "*"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.1.2",
+    "ws": "^5.2.1"
+  }
+}

@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: build
+appId: beefo.io
+productName: Discord_Rich_Presence
+copyright: Copyright ©2018 BeefoIO
+win:
+  target: squirrel
+squirrelWindows:
+  iconUrl: 'https://static.realliferpg.de/img/launcher/icon.ico'
+portable:
+  requestExecutionLevel: user
+extraFiles:
+  - filter:
+      - config.json
+electronVersion: 3.0.6
